@@ -6,24 +6,21 @@ public class Main
     {
         Scanner in = new Scanner(System.in);
         String party = "";
-        String republican = "R";
-        String democrat = "D";
-        String independent = "I";
         Scanner userInput = new Scanner(System.in);
 
-        System.out.print("Enter your party affiliation [D R I]: ");
+        System.out.print("Enter your party affiliation [D R I other]: ");
 
         party = userInput.next();
 
-        if(party == republican)
+        if(party.equals("R"))
         {
             System.out.println("You get a Republican Elephant");
         }
-        else if(party == democrat)
+        else if(party.equals("D"))
         {
             System.out.println("You get a Democratic Donkey");
         }
-        else if(party == independent)
+        else if(party.equals("I"))
         {
             System.out.println("you get an Independent Man");
         }
